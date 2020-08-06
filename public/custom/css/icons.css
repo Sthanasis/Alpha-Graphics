@@ -1,0 +1,24 @@
+*[data-icon]:before,
+*[data-icon]:after{
+    font-family: icons !important;
+    font-weight: inherit;
+    font-style: inherit;
+    display: inline-block;
+    font-size: inherit;
+    text-decoration: none;
+    /*margin-right:0.05em;*/
+    /*line-height: 1.15em;*/
+}
+
+
+[data-icon="facebook"]:before{
+    content: '\0001';
+}
+
+[data-icon="instagram"]:before{
+    content: '\0002';
+}
+
+[data-icon="linkedin"]:before{
+    content: '\0003';
+}

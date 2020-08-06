@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <navBar></navBar>
+
   </div>
+  
 </template>
 
 <script>
@@ -15,12 +17,14 @@ export default {
     }
   },
   components: {
-    navBar
+    navBar,
   }
 }
 </script>
 
 <style>
+@import '../public/custom/css/icons.css';
+
 body{
   margin: 0;
 }
@@ -29,7 +33,14 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
   padding: 0;
+  background-color:#1c2431;
+}
+
+@font-face {
+  font-family: "Merienda";
+  src: local("Merienda"),
+   url(../public/custom/fonts/alpha2.ttf) format("truetype");
 }
 </style>
