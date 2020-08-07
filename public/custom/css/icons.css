@@ -2,6 +2,17 @@
     font-size: 2rem;
 }
 
+[data-icon="logo"]:before{
+    content: '\00C3';
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+[data-icon="landing"]:before{
+    content: '\00C4';
+    font-size: 20rem;
+}
+
 [data-icon="facebook"]:before{
     content: '\00C0';
 }
@@ -12,4 +23,8 @@
 
 [data-icon="linkedin"]:before{
     content: '\00C2';
+}
+
+[data-icon="border"]:before{
+    content: '|';
 }

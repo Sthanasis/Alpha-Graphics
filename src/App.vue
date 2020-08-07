@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <navBar></navBar>
-
+    <logo></logo>
   </div>
   
 </template>
 
 <script>
 import navBar from './components/Navigation.vue'
+import logo from './components/Logo.vue'
 
 export default {
   name: 'App',
@@ -16,8 +17,12 @@ export default {
       
     }
   },
+  methods:{
+
+  },
   components: {
     navBar,
+    logo,
   }
 }
 </script>
@@ -26,8 +31,6 @@ export default {
 @import '../public/custom/css/icons.css';
 @import '../public/custom/css/vars.css';
 @import '../public/custom/css/main.css';
-
-
 
 @font-face {
   font-family: "Gilroy";

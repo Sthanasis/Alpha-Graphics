@@ -17,7 +17,7 @@ export default {
         display: flex;
     }
 
-
+    
     .social{
         cursor: pointer;
         margin: 0 1rem;
