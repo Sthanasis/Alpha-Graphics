@@ -3,7 +3,7 @@
 }
 
 
-[data-icon="facebook"]::before{
+[data-icon="facebook"]:before{
     content: '\00C0';
 }
 
