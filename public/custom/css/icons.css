@@ -2,7 +2,6 @@
     font-size: 2rem;
 }
 
-
 [data-icon="facebook"]:before{
     content: '\00C0';
 }
