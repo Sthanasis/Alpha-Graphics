@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <img src="../assets/FB_ICON.svg" width="40" height="40" alt="">
-        <img src="../assets/INSTA_ICON.svg" width="40" height="40" alt="">
-        <img src="../assets/LINKEDIN_ICON.svg" width="40" height="40" alt="">
+    <div id="socialContainer">
+        <div class="social" data-icon="facebook"></div>
+        <a class="social" data-icon="instagram" href="https://www.instagram.com/alphagraphics98/"></a>
+        <div class="social" data-icon="linkedin"></div>
     </div>
 </template>
 
@@ -13,7 +13,18 @@ export default {
 </script>
 
 <style scoped>
-    img{
+    #socialContainer{
+        display: flex;
+    }
+
+
+    .social{
         cursor: pointer;
+        margin: 0 1rem;
+        text-decoration: none;
+    }  
+    
+    .social:hover{
+        color: var(--LightColor);
     }
 </style>

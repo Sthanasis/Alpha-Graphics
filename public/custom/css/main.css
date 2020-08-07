@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+#app {
+    font-family: Gilroy, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #ffffff;
+    padding: 0;
+    background-color: var(--DarkColor);
+}
+
+a{
+    color: var(--MainText);
+}

@@ -1,24 +1,16 @@
-*[data-icon]:before,
-*[data-icon]:after{
-    font-family: icons !important;
-    font-weight: inherit;
-    font-style: inherit;
-    display: inline-block;
-    font-size: inherit;
-    text-decoration: none;
-    /*margin-right:0.05em;*/
-    /*line-height: 1.15em;*/
+*[data-icon]:before{
+    font-size: 2rem;
 }
 
 
-[data-icon="facebook"]:before{
-    content: '\0001';
+[data-icon="facebook"]::before{
+    content: '\00C0';
 }
 
 [data-icon="instagram"]:before{
-    content: '\0002';
+    content: '\00C1';
 }
 
 [data-icon="linkedin"]:before{
-    content: '\0003';
+    content: '\00C2';
 }

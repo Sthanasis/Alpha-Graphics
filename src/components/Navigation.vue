@@ -1,13 +1,13 @@
 <template>
     <nav>
         <div id="NavPageContainer">
-            <div id="logoContainer">
+            <div id="logoContainer" class="navDestination">
               <span id="headLogo">alpha</span>
               <span id="footLogo">graphics</span>
             </div>
-            <div style="color: #00c9ff">Portofolio</div>
-            <div>About</div>
-            <div>Contact</div>
+            <div class="navDestination">Portofolio</div>
+            <div class="navDestination">About</div>
+            <div class="navDestination">Contact</div>
         </div>
         <div>
           <social></social>
@@ -54,10 +54,18 @@ export default {
       font-size: 1.5rem;
     }
 
+    .navDestination{
+      cursor: pointer;
+    }
+
+    .navDestination:hover{
+      color:var(--LightColor);
+    }
+
     #footLogo{
       text-transform: capitalize;
       font-size: .7rem;
-      color: #00c9ff;
+      color: var(--LightColor);
       position: absolute;
       top: 2.3rem;
       margin-left: 2rem;

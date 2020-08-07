@@ -24,23 +24,14 @@ export default {
 
 <style>
 @import '../public/custom/css/icons.css';
+@import '../public/custom/css/vars.css';
+@import '../public/custom/css/main.css';
 
-body{
-  margin: 0;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ffffff;
-  padding: 0;
-  background-color:#1c2431;
-}
+
 
 @font-face {
-  font-family: "Merienda";
-  src: local("Merienda"),
-   url(../public/custom/fonts/alpha2.ttf) format("truetype");
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+   url(./assets/fonts/Gilroy-Light.otf) format("truetype");
 }
 </style>
