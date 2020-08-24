@@ -17,17 +17,17 @@ body {
 
 .projectImageBulls {
   background-image: url("../../../src/assets/BULLS.svg");
-  background-position-x: 10rem;
+  background-position-x: 15vw;
 }
 
 .projectImageSpiderman {
   background-image: url("../../../src/assets/SPIDERMAN.svg");
-  background-position-x: 50rem;
+  background-position-x: 55vw;
 }
 
 .projectImageJuventus {
   background-image: url("../../../src/assets/JUVENTUS\ KIT.svg");
-  background-position-x: 10rem;
+  background-position-x: 15vw;
 }
 
 .projectImageBulls,
