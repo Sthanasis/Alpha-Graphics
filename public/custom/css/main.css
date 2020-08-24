@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
 }
 
-.backgroundBox {
+/* .backgroundBox {
   background-image: url(../../../src/assets/BOX.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@ body {
   height: 30rem;
   position: absolute;
   opacity: 0.7;
-}
+} */
 
 .projectImageBulls {
   background-image: url("../../../src/assets/BULLS.svg");
@@ -55,19 +55,19 @@ a {
 }
 
 .fade-in {
-  animation: fadeIn ease-out 6s;
-  -webkit-animation: fadeIn ease-out 6s;
-  -moz-animation: fadeIn ease-out 6s;
-  -o-animation: fadeIn ease-out 6s;
-  -ms-animation: fadeIn ease-out 6s;
+  animation: fadeIn ease-out 9s;
+  -webkit-animation: fadeIn ease-out 9s;
+  -moz-animation: fadeIn ease-out 9s;
+  -o-animation: fadeIn ease-out 9s;
+  -ms-animation: fadeIn ease-out 9s;
 }
 
 .fade-out {
-  animation: fadeOut ease-out 4s;
-  -webkit-animation: fadeOut ease-out 4s;
-  -moz-animation: fadeOut ease-out 4s;
-  -o-animation: fadeOut ease-out 4s;
-  -ms-animation: fadeOut ease-out 4s;
+  animation: fadeOut ease-out 6s;
+  -webkit-animation: fadeOut ease-out 6s;
+  -moz-animation: fadeOut ease-out 6s;
+  -o-animation: fadeOut ease-out 6s;
+  -ms-animation: fadeOut ease-out 6s;
   opacity: 0;
 }
 

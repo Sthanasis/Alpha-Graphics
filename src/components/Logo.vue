@@ -1,7 +1,7 @@
 <template>
     <div id="landingLogo">
         <div data-icon="border" class="border leftBorder"></div>
-        <div class="backgroundBox"></div>
+        <!-- <div class="backgroundBox"></div> -->
         <div data-icon="landing" class="center fade-out" id="mainLogo">
 
             <div id="footerLogo">Graphics</div>
