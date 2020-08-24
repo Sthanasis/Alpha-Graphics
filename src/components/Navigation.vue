@@ -1,61 +1,60 @@
 <template>
-    <nav>
-        <div id="NavPageContainer" >
-            <div id="logoContainer" class="navDestination" data-icon="logo">
-            </div>
-            <div class="navDestination">Portofolio</div>
-            <div class="navDestination">About</div>
-            <div class="navDestination">Contact</div>
-        </div>
-        <div>
-          <social></social>
-        </div>
-    </nav>
-
+  <nav>
+    <div id="NavPageContainer">
+      <div id="logoContainer" class="navDestination" data-icon="logo"></div>
+      <div class="navDestination">Portofolio</div>
+      <div class="navDestination">About</div>
+      <div class="navDestination">Contact</div>
+    </div>
+    <div>
+      <social></social>
+    </div>
+  </nav>
 </template>
 
 <script>
-import social from './Social.vue'
+import social from "./Social.vue";
 export default {
-  name: 'Navigation',
-  components:{
+  name: "Navigation",
+  components: {
     social,
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
-    nav{
-        display: flex;
-        justify-content: space-around;
-        height: 5rem;
-    }
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
+  background: var(--DarkColor);
+}
 
-    nav div{
-      height: fit-content;
-      height: -moz-fit-content;
-      margin: auto 1em;
-    }
+nav div {
+  height: fit-content;
+  height: -moz-fit-content;
+  margin: auto 1em;
+}
 
-    #NavPageContainer{
-      display: flex;
-    }
+#NavPageContainer {
+  display: flex;
+}
 
-    #logoContainer{
-      display: flex;
-      flex-direction: column;
-      margin-bottom: .5rem;
-    }
+#logoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
 
+.navDestination {
+  cursor: pointer;
+  font-weight: bold;
+}
 
-    .navDestination{
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .navDestination:hover{
-      color:var(--LightColor);
-    }
-
-
+.navDestination:hover {
+  color: var(--LightColor);
+}
 </style>

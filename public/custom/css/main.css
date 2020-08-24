@@ -15,6 +15,30 @@ body {
   opacity: 0.7;
 }
 
+.projectImageBulls {
+  background-image: url("../../../src/assets/BULLS.svg");
+  background-position-x: 10rem;
+}
+
+.projectImageSpiderman {
+  background-image: url("../../../src/assets/SPIDERMAN.svg");
+  background-position-x: 50rem;
+}
+
+.projectImageJuventus {
+  background-image: url("../../../src/assets/JUVENTUS\ KIT.svg");
+  background-position-x: 10rem;
+}
+
+.projectImageBulls,
+.projectImageSpiderman,
+.projectImageJuventus {
+  min-height: 50vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 30rem;
+}
+
 #app {
   font-family: Gilroy, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +47,7 @@ body {
   color: var(--MainText);
   padding: 0;
   background-color: var(--DarkColor);
+  padding-bottom: 10rem;
 }
 
 a {
@@ -30,19 +55,19 @@ a {
 }
 
 .fade-in {
-  animation: fadeIn ease 6s;
-  -webkit-animation: fadeIn ease 6s;
-  -moz-animation: fadeIn ease 6s;
-  -o-animation: fadeIn ease 6s;
-  -ms-animation: fadeIn ease 6s;
+  animation: fadeIn ease-out 6s;
+  -webkit-animation: fadeIn ease-out 6s;
+  -moz-animation: fadeIn ease-out 6s;
+  -o-animation: fadeIn ease-out 6s;
+  -ms-animation: fadeIn ease-out 6s;
 }
 
 .fade-out {
-  animation: fadeOut ease 4s;
-  -webkit-animation: fadeOut ease 4s;
-  -moz-animation: fadeOut ease 4s;
-  -o-animation: fadeOut ease 4s;
-  -ms-animation: fadeOut ease 4s;
+  animation: fadeOut ease-out 4s;
+  -webkit-animation: fadeOut ease-out 4s;
+  -moz-animation: fadeOut ease-out 4s;
+  -o-animation: fadeOut ease-out 4s;
+  -ms-animation: fadeOut ease-out 4s;
   opacity: 0;
 }
 
