@@ -2,10 +2,10 @@
   <div id="landingLogo">
     <div data-icon="border" class="border leftBorder"></div>
     <!-- <div class="backgroundBox"></div> -->
-    <div data-icon="landing" class="center fade-out" id="mainLogo">
+    <div data-icon="landing" class="center" id="mainLogo">
       <div id="footerLogo">Graphics</div>
     </div>
-    <div class="artistName center fade-in">
+    <div id="nameLogo" class="artistName center">
       <div class="name">
         <span class="firstName">Alexandros</span>
         <br />
@@ -30,6 +30,7 @@ export default {};
   src: local("GilroyBold"),
     url(../assets/fonts/Gilroy-ExtraBold.otf) format("truetype");
 }
+
 #landingLogo {
   display: flex;
   width: fit-content;
@@ -37,6 +38,10 @@ export default {};
   height: 100vh;
   margin: auto;
   font-family: "Gilroy-Bold";
+}
+
+#nameLogo {
+  opacity: 0;
 }
 
 #mainLogo {
@@ -66,7 +71,7 @@ export default {};
 
 .firstName {
   background-color: var(--RedColor);
-  margin-right: 5rem;
+  margin-right: 15rem;
 }
 
 .lastName {

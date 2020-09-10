@@ -66,19 +66,20 @@ a {
 }
 
 .fade-in {
-  animation: fadeIn ease-out 9s;
-  -webkit-animation: fadeIn ease-out 9s;
-  -moz-animation: fadeIn ease-out 9s;
-  -o-animation: fadeIn ease-out 9s;
-  -ms-animation: fadeIn ease-out 9s;
+  animation: fadeIn ease-out 4s;
+  -webkit-animation: fadeIn ease-out 4s;
+  -moz-animation: fadeIn ease-out 4s;
+  -o-animation: fadeIn ease-out 4s;
+  -ms-animation: fadeIn ease-out 4s;
+  opacity: 1 !important;
 }
 
 .fade-out {
-  animation: fadeOut ease-out 6s;
-  -webkit-animation: fadeOut ease-out 6s;
-  -moz-animation: fadeOut ease-out 6s;
-  -o-animation: fadeOut ease-out 6s;
-  -ms-animation: fadeOut ease-out 6s;
+  animation: fadeOut ease-out 4s;
+  -webkit-animation: fadeOut ease-out 4s;
+  -moz-animation: fadeOut ease-out 4s;
+  -o-animation: fadeOut ease-out 4s;
+  -ms-animation: fadeOut ease-out 4s;
   opacity: 0;
 }
 
