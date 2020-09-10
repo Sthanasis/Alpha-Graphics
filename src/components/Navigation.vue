@@ -30,7 +30,6 @@ nav {
   position: fixed;
   width: 100vw;
   z-index: 3;
-  background: var(--DarkColor);
 }
 
 nav div {
@@ -56,5 +55,15 @@ nav div {
 
 .navDestination:hover {
   color: var(--LightColor);
+}
+
+.transparent {
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.colored {
+  background-color: var(--DarkColor);
+  transition: 0.5s;
 }
 </style>
