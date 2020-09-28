@@ -1,26 +1,72 @@
 <template>
   <div id="app">
-    <navBar></navBar>
-    <logo></logo>
-    <landing></landing>
+    <navBar
+      :isAdmin="isAdmin"
+      :expanded="expanded"
+      :currentPage="currentPage"
+      @setCurrentPage="setCurrentPage"
+      @toggleMenu="toggleMenu"
+      @adminLogout="adminLogout"
+    ></navBar>
+    <router-view
+      :isAdmin="isAdmin"
+      :design="design"
+      :expanded="expanded"
+      :currentPage="currentPage"
+      @setCurrentPage="setCurrentPage"
+      @graphicDesign="graphicDesign"
+      @conceptArt="conceptArt"
+      @toggleMenuOff="toggleMenuOff"
+    ></router-view>
   </div>
 </template>
 
 <script>
 import navBar from "./components/Navigation.vue";
-import logo from "./components/Logo.vue";
-import landing from "./components/Landing.vue";
 
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      isAdmin: false,
+      design: true,
+      expanded: false,
+      currentPage: "",
+    };
   },
-  methods: {},
+  methods: {
+    adminLogout() {
+      this.isAdmin = false;
+      this.$router.push("/");
+    },
+    graphicDesign() {
+      this.design = true;
+    },
+    conceptArt() {
+      this.design = false;
+    },
+    toggleMenu() {
+      this.expanded = !this.expanded;
+    },
+    toggleMenuOff() {
+      this.expanded = false;
+    },
+    setCurrentPage() {
+      this.currentPage = this.$route.path.substring(1);
+    },
+  },
+  watch: {
+    $route(to, from) {
+      if (
+        from.fullPath === "/login" &&
+        to.fullPath === "/" &&
+        localStorage.getItem("token")
+      )
+        this.isAdmin = true;
+    },
+  },
   components: {
     navBar,
-    logo,
-    landing,
   },
 };
 </script>
